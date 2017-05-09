@@ -61,6 +61,43 @@
             ReferencedContainer = "container:test.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "PROJECT_DIR_NAME"
+            value = "test"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "PROJECT_NAME"
+            value = "test"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "IPA_PATH"
+            value = "${WORKSPACE}/ipa-dir/${PROJECT_DIR_NAME}-${BUILD_ID}.ipa"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "PROJFILENAME"
+            value = "${WORKSPACE}/${PROJECT_NAME}.xcodeproj"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "TARGET"
+            value = "${PROJECT_NAME}"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "PROVPROFILE_UUID"
+            value = "f24cad59-5f1e-4690-91c9-5b97fd6567ef"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "INFOPLIST_FILE"
+            value = "${WORKSPACE}/${PROJECT_NAME}/${PROJECT_NAME}-Info.plist"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

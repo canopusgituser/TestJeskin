@@ -74,6 +74,7 @@
 				719A4D381EC0672A0042DA26 /* Sources */,
 				719A4D391EC0672A0042DA26 /* Frameworks */,
 				719A4D3A1EC0672A0042DA26 /* Resources */,
+				719A4D571EC0AAB90042DA26 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,6 +131,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		719A4D571EC0AAB90042DA26 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "projmodify ${PROJFILENAME} ${TARGET} \"iPhone Distribution: COMPANY NAME REGISTERED ON APPLE DEV PORTAL\" ${PROVPROFILE_UUID}\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${BUILD_NUMBER}\" \"${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		719A4D381EC0672A0042DA26 /* Sources */ = {
